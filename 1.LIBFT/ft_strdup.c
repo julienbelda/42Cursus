@@ -6,13 +6,13 @@
 /*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 11:25:04 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/07/24 11:26:54 by julienbelda      ###   ########.fr       */
+/*   Updated: 2024/10/09 11:12:22 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(char *src)
+char	*ft_strdup(const char *src)
 {
 	int		i;
 	char	*dest;

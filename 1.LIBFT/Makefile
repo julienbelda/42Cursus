@@ -6,7 +6,7 @@
 #    By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/15 14:11:33 by julienbelda       #+#    #+#              #
-#    Updated: 2024/08/21 11:26:48 by julienbelda      ###   ########.fr        #
+#    Updated: 2024/10/09 10:31:26 by julienbelda      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,15 @@ SRCS	=	ft_isalpha.c \
 				ft_putstr_fd.c \
 				ft_putendl_fd.c \
 				ft_putnbr_fd.c \
-				ft_strjoin.c
+				ft_strjoin.c \
+				ft_strrchr.c \
+				ft_strnstr.c \
+				ft_calloc.c \
+				ft_substr.c \
+				ft_strtrim.c \
+				ft_split.c \
+				ft_strmapi.c \
+				ft_striteri.c \
 
 OBJS	=	$(SRCS:%.c=%.o)
 

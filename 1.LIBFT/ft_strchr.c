@@ -6,13 +6,13 @@
 /*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 11:14:11 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/08/19 11:51:14 by julienbelda      ###   ########.fr       */
+/*   Updated: 2024/10/09 11:11:02 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
 	{

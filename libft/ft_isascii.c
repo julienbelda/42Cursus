@@ -3,14 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jubelda <jubelda@student.42.fr>            +#+  +:+       +#+        */
+/*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 11:05:16 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/10/10 15:16:36 by jubelda          ###   ########.fr       */
+/*   Updated: 2024/10/14 17:44:18 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* @ Check si un caractère est un ascii
+*/
 
 int	ft_isascii(int c)
 {

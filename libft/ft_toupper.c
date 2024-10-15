@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jubelda <jubelda@student.42.fr>            +#+  +:+       +#+        */
+/*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 14:47:38 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/10/10 15:00:15 by jubelda          ###   ########.fr       */
+/*   Updated: 2024/10/14 17:01:59 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,6 @@ int	ft_toupper(int c)
 /*
 int main(void)
 {
-	printf("%d\n", ft_toupper('a'));
+	printf("%d\n", ft_toupper('j'));
 }
 */

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jubelda <jubelda@student.42.fr>            +#+  +:+       +#+        */
+/*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 14:45:21 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/10/10 15:12:40 by jubelda          ###   ########.fr       */
+/*   Updated: 2024/10/14 16:54:05 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ size_t	ft_strlcat(char *dest, char *src, size_t destsize)
 /* int	main(void)
 {
 	char	dest[10] = "Hello";
-	char	src[] = "World";
+	char	src[] = "mec";
 	printf("%lu\n", ft_strlcat(dest, src, 10));
 	printf("%s\n", dest);
 } */

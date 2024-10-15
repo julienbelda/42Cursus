@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jubelda <jubelda@student.42.fr>            +#+  +:+       +#+        */
+/*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 11:01:09 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/10/10 18:05:40 by jubelda          ###   ########.fr       */
+/*   Updated: 2024/10/14 11:54:16 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
+# include <ctype.h>
 
 int		ft_atoi(const char *str);
 int		ft_isalnum(int c);

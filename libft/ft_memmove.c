@@ -3,14 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jubelda <jubelda@student.42.fr>            +#+  +:+       +#+        */
+/*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 12:19:05 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/10/10 17:25:33 by jubelda          ###   ########.fr       */
+/*   Updated: 2024/10/14 19:51:12 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*	@ Copie un bloc de mémoire -> src
+	@ De la taille -> len
+	@ Dans un new emplacement -> dest
+	@ Chevauchement de mémoire possible
+*/
 
 void	*ft_memmove(void *dest, void *src, size_t len)
 {
@@ -40,8 +46,8 @@ void	*ft_memmove(void *dest, void *src, size_t len)
 
 /* int	main(void)
 {
-	char	str1[] = "Hello";
-	char	str2[] = "World";
+	char	str1[] = "Salut";
+	char	str2[] = "cava";
 	printf("%s\n", ft_memmove(str1, str2, 3));
 	printf("%s\n", memmove(str1, str2, 3));
 } */

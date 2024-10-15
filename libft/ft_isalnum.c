@@ -3,14 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jubelda <jubelda@student.42.fr>            +#+  +:+       +#+        */
+/*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 10:20:01 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/10/10 15:16:24 by jubelda          ###   ########.fr       */
+/*   Updated: 2024/10/14 17:43:58 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* @ Check si un caractère est numérique
+*/
 
 int	ft_isalnum(int c)
 {

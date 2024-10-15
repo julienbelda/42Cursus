@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jubelda <jubelda@student.42.fr>            +#+  +:+       +#+        */
+/*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 11:33:31 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/10/10 16:27:24 by jubelda          ###   ########.fr       */
+/*   Updated: 2024/10/14 19:52:51 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*	@ Ecrire un nombre sur un file descriptor */
 
 void	ft_putnbr_fd(int nb, int fd)
 {
@@ -35,5 +37,5 @@ void	ft_putnbr_fd(int nb, int fd)
 
 /* int	main(void)
 {
-	ft_putnbr_fd(42, 1);
+	ft_putnbr_fd(27, 1);
 } */

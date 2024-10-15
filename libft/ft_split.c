@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jubelda <jubelda@student.42.fr>            +#+  +:+       +#+        */
+/*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 11:18:03 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/10/10 16:38:11 by jubelda          ###   ########.fr       */
+/*   Updated: 2024/10/14 16:19:42 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ char	**ft_split(char const *str, char delim)
 	char	**tab;
 	size_t	i;
 
-	tab = ft_split("Hello my friends see you later", ' ');
+	tab = ft_split(".julien.cava", '.');
 	i = 0;
 	while (tab[i])
 	{

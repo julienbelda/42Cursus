@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jubelda <jubelda@student.42.fr>            +#+  +:+       +#+        */
+/*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 11:14:11 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/10/10 15:13:00 by jubelda          ###   ########.fr       */
+/*   Updated: 2024/10/14 16:51:46 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strchr(const char *s, int c)
 int	main(void)
 {
 	
-	const char    s[] = "Welcome my friends see/+you-later";
-	printf("%s\n", ft_strchr(s, 'e'));
-	printf("%s\n", strchr(s, 'e'));
+	const char    s[] = "salut cava";
+	printf("%s\n", ft_strchr(s, 't'));
+	printf("%s\n", strchr(s, 't'));
 } */

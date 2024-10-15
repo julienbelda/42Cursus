@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jubelda <jubelda@student.42.fr>            +#+  +:+       +#+        */
+/*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 14:27:39 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/10/10 15:17:32 by jubelda          ###   ########.fr       */
+/*   Updated: 2024/10/14 16:54:14 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t destsize)
 
 /* int	main(void)
 {
-	char	dest[10] = "Hello";
-	char	src[] = "World";
+	char	dest[10] = "yes";
+	char	src[] = "sir";
 	printf("%lu\n", ft_strlcpy(dest, src, 10));
 	printf("%s\n", dest);
 } */

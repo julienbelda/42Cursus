@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jubelda <jubelda@student.42.fr>            +#+  +:+       +#+        */
+/*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 11:25:04 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/10/10 15:12:56 by jubelda          ###   ########.fr       */
+/*   Updated: 2024/10/14 16:52:56 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_strdup(const char *src)
 
 /* int	main(void)
 {
-	const char    s[] = "Welcome my friends see/+you-later";
+	const char    s[] = "salut mon gars";
 	printf("%s\n", ft_strdup(s));
 	printf("%s\n", strdup(s));
 } */

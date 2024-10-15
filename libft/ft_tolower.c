@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jubelda <jubelda@student.42.fr>            +#+  +:+       +#+        */
+/*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 14:53:15 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/10/10 15:00:36 by jubelda          ###   ########.fr       */
+/*   Updated: 2024/10/14 16:59:30 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,6 @@ int	ft_tolower(int c)
 /*
 int main(void)
 {
-	printf("%d\n", ft_tolower('C'));
+	printf("%d\n", ft_tolower('J'));
 }
 */

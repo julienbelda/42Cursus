@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jubelda <jubelda@student.42.fr>            +#+  +:+       +#+        */
+/*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 11:12:32 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/10/10 15:12:33 by jubelda          ###   ########.fr       */
+/*   Updated: 2024/10/14 16:54:20 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ size_t	ft_strlen(const char *str)
 
 /* int	main(void)
 {
-	const char    s[] = "Welcome my friends see/+you-later";
+	const char    s[] = "julien";
 	printf("%lu\n", ft_strlen(s));
 	printf("%lu\n", strlen(s));
 } */

@@ -6,11 +6,14 @@
 /*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 10:19:45 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/07/15 10:53:52 by julienbelda      ###   ########.fr       */
+/*   Updated: 2024/10/14 17:43:55 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* @ Check si un caractère est de l'alphabet
+*/
 
 int	ft_isalpha(int c)
 {

@@ -6,11 +6,16 @@
 /*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/22 09:15:01 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/08/26 09:57:27 by julienbelda      ###   ########.fr       */
+/*   Updated: 2024/10/14 22:23:26 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*	@ Recherche la 1ère occurence d'une sous-chaine de caractère -> needle
+	@ Dans la chaine -> haystack
+	@ La recherche se fait dans les -> len 1er caractère de haystack
+*/
 
 char	*ft_strnstr(char *haystack, char *needle, size_t len)
 {
@@ -33,4 +38,12 @@ char	*ft_strnstr(char *haystack, char *needle, size_t len)
 		i++;
 	}
 	return (NULL);
+}
+
+int	main(void)
+{
+	char	haystack[] = "salut jul cava";
+	char	needle[] = "jul";
+	printf("%s\n", ft_strnstr(haystack, needle, 9));
+	printf("%s\n", strnstr(haystack, needle, 9));
 }

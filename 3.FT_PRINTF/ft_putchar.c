@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_convert_s.c                                     :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: julien <julien@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/01 12:58:45 by julien            #+#    #+#             */
-/*   Updated: 2023/02/16 20:25:21 by julien           ###   ########.fr       */
+/*   Created: 2022/12/01 12:43:23 by julien            #+#    #+#             */
+/*   Updated: 2022/12/30 08:55:38 by julien           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_convert_s(char *s)
+void	ft_putchar(char c)
 {
-	int	i;
-
-	i = 0;
-	if (!s)
-		i = ft_putstr("(null)");
-	else
-		i = ft_putstr(s);
-	return (i);
+	write(1, &c, 1);
 }

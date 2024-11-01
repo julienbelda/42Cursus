@@ -6,7 +6,7 @@
 /*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 14:47:38 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/07/22 14:52:53 by julienbelda      ###   ########.fr       */
+/*   Updated: 2024/10/14 17:01:59 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,10 @@ int	ft_toupper(int c)
 		c -= 32;
 	return (c);
 }
+
+/*
+int main(void)
+{
+	printf("%d\n", ft_toupper('j'));
+}
+*/

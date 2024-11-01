@@ -6,95 +6,69 @@
 /*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 11:18:03 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/09/09 11:24:59 by julienbelda      ###   ########.fr       */
+/*   Updated: 2024/10/14 16:19:42 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	**ft_malloc_error(char **tab)
+static size_t	ft_count_word(char const *str, char delim)
 {
-	size_t	i;
+	size_t	count;
 
-	i = 0;
-	while (tab[i])
-	{
-		free(tab[i]);
-		i++;
-	}
-	free(tab);
-	return (NULL);
-}
-
-static size_t	ft_nb_words(char const *s, char c)
-{
-	size_t	i;
-	size_t	nb_words;
-
-	if (!s[0])
+	if (!*str)
 		return (0);
-	i = 0;
-	nb_words = 0;
-	while (s[i] && s[i] == c)
-		i++;
-	while (s[i])
+	count = 0;
+	while (*str)
 	{
-		if (s[i] == c)
-		{
-			nb_words++;
-			while (s[i] && s[i] == c)
-				i++;
-			continue ;
-		}
-		i++;
+		while (*str == delim)
+			str++;
+		if (*str)
+			count++;
+		while (*str != delim && *str)
+			str++;
 	}
-	if (s[i - 1] != c)
-		nb_words++;
-	return (nb_words);
+	return (count);
 }
 
-static void	ft_get_next_word(char **next_word, size_t *next_word_len, char c)
-{
-	size_t	i;
-
-	*next_word += *next_word_len;
-	*next_word_len = 0;
-	i = 0;
-	while (**next_word && **next_word == c)
-		(*next_word)++;
-	while ((*next_word)[i])
-	{
-		if ((*next_word)[i] == c)
-			return ;
-		(*next_word_len)++;
-		i++;
-	}
-}
-
-char	**ft_split(char const *s, char c)
+char	**ft_split(char const *str, char delim)
 {
 	char	**tab;
-	char	*next_word;
-	size_t	next_word_len;
-	size_t	i;
+	size_t	word_len;
+	int		i;
 
-	if (!s)
-		return (NULL);
-	tab = (char **)malloc(sizeof(char *) * (ft_nb_words(s, c) + 1));
-	if (!tab)
-		return (NULL);
+	tab = (char **)malloc((ft_count_word(str, delim) + 1) * sizeof(char *));
+	if (!str || !tab)
+		return (0);
 	i = 0;
-	next_word = (char *)s;
-	next_word_len = 0;
-	while (i < ft_nb_words(s, c))
+	while (*str)
 	{
-		ft_get_next_word(&next_word, &next_word_len, c);
-		tab[i] = (char *)malloc(sizeof(char) * (next_word_len + 1));
-		if (!tab[i])
-			return (ft_malloc_error(tab));
-		ft_strlcpy(tab[i], next_word, next_word_len + 1);
-		i++;
+		while (*str == delim && *str)
+			str++;
+		if (*str)
+		{
+			if (!ft_strchr(str, delim))
+				word_len = ft_strlen(str);
+			else
+				word_len = ft_strchr(str, delim) - str;
+			tab[i++] = ft_substr(str, 0, word_len);
+			str += word_len;
+		}
 	}
 	tab[i] = NULL;
 	return (tab);
 }
+
+/* int	main(void)
+{
+	char	**tab;
+	size_t	i;
+
+	tab = ft_split(".julien.cava", '.');
+	i = 0;
+	while (tab[i])
+	{
+		printf("%s\n", tab[i]);
+		i++;
+	}
+} */

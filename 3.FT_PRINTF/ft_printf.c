@@ -3,61 +3,56 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
+/*   By: julien <julien@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/03 14:27:34 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/10/09 16:18:01 by julienbelda      ###   ########.fr       */
+/*   Created: 2022/11/29 10:43:37 by julien            #+#    #+#             */
+/*   Updated: 2023/01/06 12:53:15 by julien           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-/* Etape 1 : formater la chaine de caractère trouver le % et le caractère suivant pour lui associé la bonne fonction */
-
-int	ft_convert_format(const char format, va_list args)
+int	ft_convert_format(va_list ap, char format)
 {
-	int	len;
+	int	convert;
 
-	len = 0;
+	convert = 0;
 	if (format == 'c')
-		len += (char)ft_convert_c(va_arg(args, int));
-	if (format == 's')
-		len += ft_convert_s(va_arg(args, char *));
-	if (format == 'd')
-		len += ft_convert_d_and_i(va_arg(args, int));
-	if (format == 'i')
-		len += ft_convert_d_and_i(va_arg(args, int));
-	return (len);
+		convert = ft_convert_c(va_arg(ap, int));
+	else if (format == 'd' || format == 'i')
+		convert = ft_convert_d(va_arg(ap, int));
+	else if (format == 's')
+		convert = ft_convert_s(va_arg(ap, char *));
+	else if (format == '%')
+		convert = ft_print_prc('%');
+	else if (format == 'u')
+		convert = ft_convert_u(va_arg(ap, unsigned int));
+	else if (format == 'x')
+		convert = ft_convert_base(va_arg(ap, int), "0123456789abcdef");
+	else if (format == 'X')
+		convert = ft_convert_base(va_arg(ap, int), "0123456789ABCDEF");
+	else if (format == 'p')
+		convert = ft_convert_long((va_arg(ap, unsigned long)),
+				"0123456789abcdef");
+	return (convert);
 }
 
-int	ft_printf(const char *format, ...)
+int	ft_printf(const char *s, ...)
 {
-	int		i;
-	int		len;
-	va_list	args;
+	int			i;
+	va_list		ap;
+	int			len;
 
-	va_start(args, format);
-	i = 0;
+	i = -1;
+	va_start(ap, s);
 	len = 0;
-
-	if (len < 0)
-		return (-1);
-	while(format[i])
+	while (s[++i])
 	{
-		if (format[i] == '%')
-		{
-			i++;
-			len += ft_convert_format(format[i], args);
-		}
+		if (s[i] == '%')
+			len += ft_convert_format(ap, s[++i]);
 		else
-			len += ft_convert_c(format[i]);
-		i++;
+			len += write(1, &s[i], 1);
 	}
-	va_end(args);
+	va_end(ap);
 	return (len);
 }
-
-/* int main()
-{
-	ft_printf("hello %d", 10);
-} */

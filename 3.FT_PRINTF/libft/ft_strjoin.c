@@ -6,7 +6,7 @@
 /*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 10:58:38 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/09/03 11:31:26 by julienbelda      ###   ########.fr       */
+/*   Updated: 2024/10/14 16:53:56 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	dest[i] = '\0';
 	return (dest);
 }
+
+/* int	main(void)
+{
+	const char    s1[] = "salut jul";
+	const char    s2[] = "cava";
+	printf("%s\n", ft_strjoin(s1, s2));
+	printf("%s\n", strjoin(s1, s2));
+} */

@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_convert_s.c                                     :+:      :+:    :+:   */
+/*   ft_convert_d.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: julien <julien@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/01 12:58:45 by julien            #+#    #+#             */
-/*   Updated: 2023/02/16 20:25:21 by julien           ###   ########.fr       */
+/*   Created: 2022/12/01 13:24:07 by julien            #+#    #+#             */
+/*   Updated: 2023/01/02 16:27:32 by julien           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_convert_s(char *s)
+int	ft_convert_d(int c)
 {
-	int	i;
+	int	len;
 
-	i = 0;
-	if (!s)
-		i = ft_putstr("(null)");
-	else
-		i = ft_putstr(s);
-	return (i);
+	len = ft_putnbr(c);
+	return (len);
 }

@@ -1,25 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_convert_s.c                                     :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: julien <julien@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/01 12:58:45 by julien            #+#    #+#             */
-/*   Updated: 2023/02/16 20:25:21 by julien           ###   ########.fr       */
+/*   Created: 2022/12/01 13:07:21 by julien            #+#    #+#             */
+/*   Updated: 2023/01/06 12:53:13 by julien           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_convert_s(char *s)
+int	ft_putnbr(int nb)
+
 {
 	int	i;
 
 	i = 0;
-	if (!s)
-		i = ft_putstr("(null)");
+	if (nb == -2147483648)
+	{
+		ft_putstr("-2147483648");
+		i++;
+	}
 	else
-		i = ft_putstr(s);
+	{
+		if (nb < 0)
+		{
+			nb = nb * -1;
+			write (1, "-", 1);
+			i++;
+		}
+		if (nb > 9)
+			ft_putnbr(nb / 10);
+		ft_putchar((nb % 10 + '0'));
+	}
+	i = i + ft_strlen(nb);
 	return (i);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jubelda <jubelda@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 15:24:41 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/07/24 16:57:11 by julienbelda      ###   ########.fr       */
+/*   Updated: 2024/10/10 15:12:27 by jubelda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,12 @@ int	ft_strncmp(char *s1, char *s2, size_t n)
 		return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 	return (0);
 }
+
+/* int main(void)
+{
+	char	s1[] = "Hello";
+	char	s2[] = "hello";
+	printf("%d\n", ft_strncmp(s1, s2, 4));
+	printf("%d\n", strncmp(s1, s2, 4));
+}
+ */

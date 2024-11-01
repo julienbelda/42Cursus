@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jubelda <jubelda@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 10:46:16 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/09/03 11:31:42 by julienbelda      ###   ########.fr       */
+/*   Updated: 2024/10/10 15:12:51 by jubelda          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,9 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
+
+/* int	main(void)
+{
+	char	str[] = "Hello";
+	ft_striteri(str, &ft_putchar_fd);
+} */

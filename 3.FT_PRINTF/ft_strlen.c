@@ -1,31 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
+/*   By: julien <julien@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/28 11:09:58 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/10/14 17:02:12 by julienbelda      ###   ########.fr       */
+/*   Created: 2022/12/30 08:41:00 by julien            #+#    #+#             */
+/*   Updated: 2023/01/06 12:53:22 by julien           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "printf.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+int	ft_strlen(int nb)
 {
-	unsigned int	i;
-	char			*str;
+	int	i;
 
 	i = 0;
-	str = malloc(sizeof(char) * (ft_strlen(s) + 1));
-	if (!str)
-		return (NULL);
-	while (s[i])
+	if (nb == 0)
+		return (i + 1);
+	while (nb != 0)
 	{
-		str[i] = f(i, s[i]);
 		i++;
+		nb = nb / 10;
 	}
-	str[i] = '\0';
-	return (str);
+	return (i);
 }

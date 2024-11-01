@@ -6,7 +6,7 @@
 /*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 14:45:21 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/09/03 11:25:18 by julienbelda      ###   ########.fr       */
+/*   Updated: 2024/10/14 16:54:05 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,11 @@ size_t	ft_strlcat(char *dest, char *src, size_t destsize)
 	dest[i] = '\0';
 	return (len);
 }
+
+/* int	main(void)
+{
+	char	dest[10] = "Hello";
+	char	src[] = "mec";
+	printf("%lu\n", ft_strlcat(dest, src, 10));
+	printf("%s\n", dest);
+} */

@@ -6,7 +6,7 @@
 /*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 11:12:32 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/08/19 12:49:19 by julienbelda      ###   ########.fr       */
+/*   Updated: 2024/10/14 16:54:20 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,10 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
+
+/* int	main(void)
+{
+	const char    s[] = "julien";
+	printf("%lu\n", ft_strlen(s));
+	printf("%lu\n", strlen(s));
+} */

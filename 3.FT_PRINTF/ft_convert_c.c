@@ -3,19 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_convert_c.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
+/*   By: julien <julien@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/04 10:53:40 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/10/08 14:06:13 by julienbelda      ###   ########.fr       */
+/*   Created: 2022/12/01 12:41:58 by julien            #+#    #+#             */
+/*   Updated: 2022/12/04 14:11:03 by julien           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
 
 int	ft_convert_c(int c)
 {

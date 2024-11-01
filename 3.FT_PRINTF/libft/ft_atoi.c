@@ -6,11 +6,13 @@
 /*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 14:55:15 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/08/20 11:52:06 by julienbelda      ###   ########.fr       */
+/*   Updated: 2024/10/14 17:56:15 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*	@ Convert ascii to int */
 
 int	ft_atoi(const char *str)
 {

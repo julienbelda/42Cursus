@@ -6,11 +6,13 @@
 /*   By: julienbelda <julienbelda@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 11:33:31 by julienbelda       #+#    #+#             */
-/*   Updated: 2024/07/24 17:02:02 by julienbelda      ###   ########.fr       */
+/*   Updated: 2024/10/14 19:52:51 by julienbelda      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*	@ Ecrire un nombre sur un file descriptor */
 
 void	ft_putnbr_fd(int nb, int fd)
 {
@@ -32,3 +34,8 @@ void	ft_putnbr_fd(int nb, int fd)
 	else
 		ft_putchar_fd(nb + '0', fd);
 }
+
+/* int	main(void)
+{
+	ft_putnbr_fd(27, 1);
+} */
